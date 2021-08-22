@@ -23,9 +23,9 @@ namespace CarShop.Data.Mocks
                 };
             }
         }
-        public IEnumerable<Car> getFavouriteCars { get; set; }
+        public IEnumerable<Car> GetFavouriteCars { get; set; }
 
-        public Car getObjectCar(int carId)
+        public Car GetObjectCar(int carId)
         {
             throw new NotImplementedException();
         }

@@ -9,6 +9,6 @@ namespace CarShop.Data.Interfaces
 {
     interface ICarsCategory
     {
-        IEnumerable<Category> AllCategories { get; }
+       IEnumerable<Category> AllCategories { get; }
     }
 }
