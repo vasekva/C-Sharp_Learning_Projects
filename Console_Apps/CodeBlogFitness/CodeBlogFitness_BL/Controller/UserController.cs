@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization.Json;
 using CodeBlogFitness_BL.Model;
 
 namespace CodeBlogFitness_BL.Controller
@@ -18,19 +19,19 @@ namespace CodeBlogFitness_BL.Controller
         /// <summary>
         /// Получить данные пользователя.
         /// </summary>
-        /// <returns>Пользователь приложения. </returns>
+        /// <returns> Пользователь приложения. </returns>
         public UserController()
         {
-            var formatter = new BinaryFormatter();
+            var jsonFormatter = new DataContractJsonSerializer(typeof(User));
 
-            using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
+            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
             {
-                if (formatter.Deserialize(fs) is User user)
-                {
-                    User = user;
-                }
+                var readObject = jsonFormatter.ReadObject(file) as User;
 
-                //TODO: Что делать, если не удалось прочитать пользователя?
+                if (readObject == null)
+                {
+                    throw new FileLoadException("Не удалось получить данные пользователя из файла", "users.json");
+                }
             }
         }
 
@@ -52,11 +53,11 @@ namespace CodeBlogFitness_BL.Controller
         /// </summary>
         public void Save()
         {
-            var formatter = new BinaryFormatter();
+            var jsonFormatter = new DataContractJsonSerializer(typeof(User));
 
-            using (var fs = new FileStream("users.dat", FileMode.OpenOrCreate))
+            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, User);
+                jsonFormatter.WriteObject(file, User);
             }
         }
     }
