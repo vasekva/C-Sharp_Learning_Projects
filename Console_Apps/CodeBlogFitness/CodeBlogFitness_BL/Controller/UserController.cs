@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization.Json;
@@ -14,7 +15,7 @@ namespace CodeBlogFitness_BL.Controller
         /// <summary>
         /// Пользователь приложения.
         /// </summary>
-        public User User { get; }
+        public List<User> User { get; }
 
         /// <summary>
         /// Получить данные пользователя.
@@ -22,11 +23,11 @@ namespace CodeBlogFitness_BL.Controller
         /// <returns> Пользователь приложения. </returns>
         public UserController()
         {
-            var jsonFormatter = new DataContractJsonSerializer(typeof(User));
+            var jsonFormatter = new DataContractJsonSerializer(typeof(List<User>));
 
-            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
+            using (var file = new FileStream("users.json", FileMode.Create))
             {
-                var readObject = jsonFormatter.ReadObject(file) as User;
+                var readObject = jsonFormatter.ReadObject(file) as List<User>;
 
                 if (readObject == null)
                 {
@@ -45,7 +46,8 @@ namespace CodeBlogFitness_BL.Controller
             //TODO: Проверка
 
             var gender = new Gender(genderName);
-            User = new User(userName, gender, birthDate, weight, height);
+            User = new List<User>();
+            User.Add(new User(userName, gender, birthDate, weight, height));
         }
 
         /// <summary>
@@ -53,9 +55,9 @@ namespace CodeBlogFitness_BL.Controller
         /// </summary>
         public void Save()
         {
-            var jsonFormatter = new DataContractJsonSerializer(typeof(User));
+            var jsonFormatter = new DataContractJsonSerializer(typeof(List<User>));
 
-            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
+            using (var file = new FileStream("users.json", FileMode.Create))
             {
                 jsonFormatter.WriteObject(file, User);
             }
