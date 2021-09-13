@@ -1,3 +1,5 @@
 .vs/
-CarShop/bin/
-CarShop/obj/
+*.vscode
+*.DS_Store
+*/obj/
+*users.json
