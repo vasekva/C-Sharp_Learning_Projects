@@ -39,7 +39,11 @@ namespace CodeBlogFitness
                 Console.Write("Введите вашу дату рождения (dd.MM.yyyy): ");
                 if (DateTime.TryParse(Console.ReadLine(), out birthDate))
                 {
-                    break;
+                    if (DateTime.Now.Year - birthDate.Year >= 60
+                        || DateTime.Now.Year - birthDate.Year <= 14)
+                        Console.WriteLine("Приложение не расчитано на людей такого возраста");
+                    else
+                        break;
                 }
                 else
                 {

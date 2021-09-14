@@ -67,7 +67,6 @@ namespace CodeBlogFitness_BL.Controller
 
             using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
             {
-                file.Position = 0;
                 var readObject = jsonFormatter.ReadObject(file) as List<User>;
 
                 if (readObject != null)
