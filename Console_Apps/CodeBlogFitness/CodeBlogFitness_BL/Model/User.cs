@@ -1,39 +1,67 @@
 ﻿using System;
+using System.Runtime.Serialization;
+
 namespace CodeBlogFitness_BL.Model
 {
     /// <summary>
     /// Пользователь.
     /// </summary>
     ///
-    [Serializable]
+    [DataContract]
     public class User
     {
         #region Свойства
         /// <summary>
         /// Имя.
         /// </summary>
-        public string Name { get; }
+        [DataMember]
+        public string Name { get; set; }
 
         /// <summary>
         /// Пол.
         /// </summary>
-        public Gender Gender { get; }
+        [DataMember]
+        public Gender Gender { get; set; }
 
         /// <summary>
         /// Дата рождения.
         /// </summary>
-        public DateTime BirthDate { get;  }
+        [DataMember]
+        public DateTime BirthDate { get; set; }
 
         /// <summary>
         /// Вес.
         /// </summary>
+        [DataMember]
         public double Weight { get; set; }
 
         /// <summary>
         /// Рост.
         /// </summary>
+        [DataMember]
         public double Height { get; set; }
+
+        [DataMember]
+        public int Age
+        {
+            get { return GetAge(BirthDate); }
+            set { GetAge(BirthDate); }
+        }
+
+        public int GetAge(DateTime birthDate)
+        {
+            return DateTime.Now.Year - birthDate.Year;
+        }
         #endregion
+
+        public User(string userName)
+        {
+            if (string.IsNullOrWhiteSpace(userName))
+            {
+                throw new ArgumentNullException("Имя пользователя не может быть пустым", nameof(userName));
+            }
+            Name = userName;
+        }
 
         /// <summary>
         /// Конструктор создания пользователя.
@@ -82,7 +110,8 @@ namespace CodeBlogFitness_BL.Model
 
         public override string ToString()
         {
-            return Name;
+           // return Name;
+            return Name + " " + Age;
         }
     }
 }
