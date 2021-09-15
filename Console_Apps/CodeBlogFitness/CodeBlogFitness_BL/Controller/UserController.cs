@@ -10,7 +10,7 @@ namespace CodeBlogFitness_BL.Controller
     /// <summary>
     /// Контроллер пользователя.
     /// </summary>
-    public class UserController
+    public class UserController : BaseController
     {
         /// <summary>
         /// Пользователь приложения.
@@ -60,20 +60,7 @@ namespace CodeBlogFitness_BL.Controller
         /// <returns> Пользователи приложения. </returns>
         private List<User> GetUsersData()
         {
-            var jsonFormatter = new DataContractJsonSerializer(typeof(List<User>));
-            if (!File.Exists("users.json")
-                || (File.ReadAllLines("users.json").Length == 0))
-                return new List<User>();
-
-            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
-            {
-                var readObject = jsonFormatter.ReadObject(file) as List<User>;
-
-                if (readObject != null)
-                    return readObject;
-                else
-                    return new List<User>();
-            }
+            return LoadData<List<User>>("users.json") ?? new List<User>();
         }
 
         /// <summary>
@@ -81,12 +68,7 @@ namespace CodeBlogFitness_BL.Controller
         /// </summary>
         private void Save()
         {
-            var jsonFormatter = new DataContractJsonSerializer(typeof(List<User>));
-
-            using (var file = new FileStream("users.json", FileMode.OpenOrCreate))
-            {
-                jsonFormatter.WriteObject(file, Users);
-            }
+            SaveData<List<User>>("users.json", Users);
         }
     }
 }
