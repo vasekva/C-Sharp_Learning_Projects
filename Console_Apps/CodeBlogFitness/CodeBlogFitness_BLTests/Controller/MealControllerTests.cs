@@ -21,10 +21,11 @@ namespace CodeBlogFitness_BL.Controller.Tests
             var food = new Food(foodName, random.Next(50, 500), random.Next(50, 500), random.Next(50, 500), random.Next(50, 500));
 
             // Act
-            mealController.Add(food, 100);
+            mealController.Add(food, 100); //TODO: попробовать подать food = null
 
             // Assert
-            Assert.AreEqual(food.Name, mealController.Meal.Products.First().Key.Name);
+            Assert.AreEqual(foodName, mealController.Meal.Products.Last().Key.Name);
+            Assert.AreEqual(foodName, food.Name);
         }
     }
 }

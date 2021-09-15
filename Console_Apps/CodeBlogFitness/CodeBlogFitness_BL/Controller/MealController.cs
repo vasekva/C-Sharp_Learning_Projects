@@ -37,7 +37,8 @@ namespace CodeBlogFitness_BL.Controller
             }
             else
             {
-                Meal.Add(product, weight);
+                //Meal.Add(product, weight); //TODO: проверить разницу
+                Meal.Add(food, weight);
                 Save();
             }
         }

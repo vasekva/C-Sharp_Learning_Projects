@@ -7,41 +7,42 @@ namespace CodeBlogFitness_BL.Model
     /// Пользователь.
     /// </summary>
     ///
-    [Serializable]
+    //[Serializable]
+    [DataContract]
     public class User
     {
         #region Свойства
         /// <summary>
         /// Имя.
         /// </summary>
-       // [DataMember]
+        [DataMember]
         public string Name { get; set; }
 
         /// <summary>
         /// Пол.
         /// </summary>
-        //[DataMember]
+        [DataMember]
         public Gender Gender { get; set; }
 
         /// <summary>
         /// Дата рождения.
         /// </summary>
-        //[DataMember(IsRequired = false, EmitDefaultValue = false)]
+        [DataMember(IsRequired = false, EmitDefaultValue = false)]
         public DateTime BirthDate { get; set; }
 
         /// <summary>
         /// Вес.
         /// </summary>
-       //[DataMember]
+        [DataMember]
         public double Weight { get; set; }
 
         /// <summary>
         /// Рост.
         /// </summary>
-       // [DataMember]
+        [DataMember]
         public double Height { get; set; }
 
-       // [DataMember]
+        [DataMember]
         public int Age
         {
             get { return GetAge(BirthDate); }

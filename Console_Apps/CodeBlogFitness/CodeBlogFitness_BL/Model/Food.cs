@@ -7,36 +7,37 @@ using System.Threading.Tasks;
 
 namespace CodeBlogFitness_BL.Model
 {
-    [Serializable]
+    //[Serializable]
+    [DataContract]
     public class Food
     {
 
         #region Свойства
-        //[DataMember]
+        [DataMember]
         public string Name { get; set; }
 
         /// <summary>
         /// Белки
         /// </summary>
-        //[DataMember]
+        [DataMember]
         public double Proteins { get; set; }
 
         /// <summary>
         /// Жиры
         /// </summary>
-        //[DataMember]
+        [DataMember]
         public double Fats { get; set; }
 
         /// <summary>
         /// Углеводы
         /// </summary>
-       // [DataMember]
+        [DataMember]
         public double Carbohydrates { get; set; }
 
         /// <summary>
         /// Калории на 100 грамм продукта
         /// </summary>
-       // [DataMember]
+        [DataMember]
         public double Calories { get; set; }
         #endregion
 

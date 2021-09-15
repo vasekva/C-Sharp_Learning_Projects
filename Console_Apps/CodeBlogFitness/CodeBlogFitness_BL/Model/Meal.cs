@@ -9,19 +9,20 @@ namespace CodeBlogFitness_BL.Model
     /// <summary>
     /// Прием пищи.
     /// </summary>
-    [Serializable]
+    //[Serializable]
+    [DataContract]
     public class Meal
     {
-        //[DataMember(IsRequired = false, EmitDefaultValue = false)]
+        [DataMember(IsRequired = false, EmitDefaultValue = false)]
         public DateTime MealTime { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
-        //[DataMember]
+        [DataMember]
         public Dictionary<Food, double> Products { get; set; }
 
-        //[DataMember]
+        [DataMember]
         public User CurrentUser { get; set; }
 
         public Meal(User currentUser)
@@ -33,6 +34,8 @@ namespace CodeBlogFitness_BL.Model
 
         public void Add(Food food, double weight)
         {
+            if (food == null)
+                throw new ArgumentNullException("Поле пищи не может быть пустым!", nameof(food));
             var product = Products.Keys.FirstOrDefault(f => f.Name.Equals(food.Name));
 
             if (product == null)

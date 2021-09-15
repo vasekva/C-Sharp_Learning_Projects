@@ -2,4 +2,6 @@
 *.vscode
 *.DS_Store
 *obj/
-*users.json
+*/users.json
+*/meals.json
+*/products.json
