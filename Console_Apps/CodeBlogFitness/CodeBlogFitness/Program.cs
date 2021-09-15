@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using CodeBlogFitness_BL.Controller;
+using CodeBlogFitness_BL.Model;
 
 namespace CodeBlogFitness
 {
@@ -17,6 +18,7 @@ namespace CodeBlogFitness
             var userName = Console.ReadLine();
 
             var userController = new UserController(userName);
+            var mealController = new MealController(userController.CurrentUser);
             if (userController.IsNewUser)
             {
                 Console.Write("Введите ваш пол: ");
@@ -29,6 +31,40 @@ namespace CodeBlogFitness
                 userController.SetNewUserData(gender, birthDate, weight, height);
             }
             Console.WriteLine(userController.Users.SingleOrDefault(u => u.Name == userName));
+
+            Console.WriteLine("Что вы хотите сделать?");
+            Console.WriteLine("E - ввести прием пищи");
+            var key = Console.ReadKey();
+            Console.WriteLine("\b\b");
+
+            if (key.Key == ConsoleKey.E)
+            {
+                var foods = EnterMeal();
+                mealController.Add(foods.Food, foods.Weight);
+
+                foreach (var item in mealController.Meal.Products)
+                {
+                    Console.WriteLine($"\t{item.Key} - {item.Value}");
+                }
+            }
+
+            Console.ReadLine();
+        }
+
+        private static (Food Food, double Weight) EnterMeal()
+        {
+            Console.Write("Введите название еды: ");
+            var food = Console.ReadLine();
+
+            var calories = ParseDouble("калорийность еды");
+            var proteins = ParseDouble("белки");
+            var fats = ParseDouble("жиры");
+            var carbs = ParseDouble("углеводы");
+            var weight = ParseDouble("вес порции");
+
+            var product = new Food(food, calories, proteins, fats, carbs);
+
+            return (Food: product, Weight: weight);
         }
 
         private static DateTime ParseDateTime()
