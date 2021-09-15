@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Json;
 using CodeBlogFitness_BL.Model;
 
 namespace CodeBlogFitness_BL.Controller

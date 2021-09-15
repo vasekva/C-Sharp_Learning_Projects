@@ -1,9 +1,7 @@
 ﻿using CodeBlogFitness_BL.Model;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Json;
 
 namespace CodeBlogFitness_BL.Controller
 {
@@ -13,7 +11,7 @@ namespace CodeBlogFitness_BL.Controller
         private const string MEALS_FILENAME = "meals.json";
 
         private readonly User currentUser;
-
+        
         public List<Food> Products { get; }
 
         public Meal Meal { get; }

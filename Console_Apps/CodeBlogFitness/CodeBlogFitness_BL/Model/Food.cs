@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Runtime.Serialization;
 
 namespace CodeBlogFitness_BL.Model
 {
-    //[Serializable]
     [DataContract]
     public class Food
     {
@@ -41,7 +35,7 @@ namespace CodeBlogFitness_BL.Model
         public double Calories { get; set; }
         #endregion
 
-        public Food(string name) : this (name, 0, 0, 0, 0)
+        public Food(string name) : this(name, 0, 0, 0, 0)
         {
             //TODO: проверка
 
@@ -58,7 +52,6 @@ namespace CodeBlogFitness_BL.Model
             Fats = fats / 100.0;
             Carbohydrates = carbohydrates / 100;
         }
-
         public override string ToString()
         {
             return Name;

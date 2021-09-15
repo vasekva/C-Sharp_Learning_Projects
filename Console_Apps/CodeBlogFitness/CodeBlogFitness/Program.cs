@@ -47,7 +47,6 @@ namespace CodeBlogFitness
                     Console.WriteLine($"\t{item.Key} - {item.Value}");
                 }
             }
-
             Console.ReadLine();
         }
 

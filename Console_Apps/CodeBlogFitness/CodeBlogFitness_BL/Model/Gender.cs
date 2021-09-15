@@ -22,7 +22,6 @@ namespace CodeBlogFitness_BL.Model
             {
                 throw new ArgumentNullException("Необходимо указать пол!", nameof(name));
             }
-
             Name = name;
         }
 

@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.Serialization;
-using CodeBlogFitness_BL.Model;
 
 namespace CodeBlogFitness_BL.Model
 {
@@ -13,15 +12,21 @@ namespace CodeBlogFitness_BL.Model
     [DataContract]
     public class Meal
     {
+        /// <summary>
+        /// Время приема пищи
+        /// </summary>
         [DataMember(IsRequired = false, EmitDefaultValue = false)]
         public DateTime MealTime { get; set; }
 
         /// <summary>
-        /// 
+        /// Словарь продуктов и порции
         /// </summary>
         [DataMember]
         public Dictionary<Food, double> Products { get; set; }
 
+        /// <summary>
+        /// Текущий пользователь
+        /// </summary>
         [DataMember]
         public User CurrentUser { get; set; }
 
