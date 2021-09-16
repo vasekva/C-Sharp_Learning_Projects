@@ -8,10 +8,10 @@ namespace CodeBlogFitness_BL.Model
     /// <summary>
     /// Прием пищи.
     /// </summary>
-    //[Serializable]
     [DataContract]
     public class Meal
     {
+        #region Свойства
         /// <summary>
         /// Время приема пищи
         /// </summary>
@@ -29,6 +29,7 @@ namespace CodeBlogFitness_BL.Model
         /// </summary>
         [DataMember]
         public User CurrentUser { get; set; }
+        #endregion
 
         public Meal(User currentUser)
         {
@@ -52,6 +53,5 @@ namespace CodeBlogFitness_BL.Model
                 Products[product] += weight;
             }
         }
-
     }
 }
