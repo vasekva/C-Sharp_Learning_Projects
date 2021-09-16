@@ -6,7 +6,6 @@ namespace CodeBlogFitness_BL.Model
     /// <summary>
     /// Пользователь.
     /// </summary>
-    ///
     //[Serializable]
     [DataContract]
     public class User

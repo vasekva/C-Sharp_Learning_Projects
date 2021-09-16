@@ -120,8 +120,11 @@
   <data name="ActionSelection" xml:space="preserve">
     <value>Что вы хотите сделать?</value>
   </data>
-  <data name="Birthday_Input" xml:space="preserve">
-    <value>Введите дату вашего рождения</value>
+  <data name="ActivityName_Input" xml:space="preserve">
+    <value>Введите название упражнения: </value>
+  </data>
+  <data name="Birthday_User" xml:space="preserve">
+    <value>дату вашего рождения</value>
   </data>
   <data name="Calories" xml:space="preserve">
     <value>калорийность пищи</value>
@@ -129,11 +132,20 @@
   <data name="Carbs" xml:space="preserve">
     <value>количество углеводов</value>
   </data>
+  <data name="Choise_A" xml:space="preserve">
+    <value>A - ввести упражнение</value>
+  </data>
   <data name="Choise_E" xml:space="preserve">
     <value>E - ввести прием пищи</value>
   </data>
+  <data name="Choise_Q" xml:space="preserve">
+    <value>Q - выход</value>
+  </data>
   <data name="Fats" xml:space="preserve">
     <value>количество жиров</value>
+  </data>
+  <data name="FinishTime" xml:space="preserve">
+    <value>время конца упражнения</value>
   </data>
   <data name="FoodName_Input" xml:space="preserve">
     <value>Введите название еды: </value>
@@ -147,17 +159,20 @@
   <data name="Incorrect_Age" xml:space="preserve">
     <value>Приложение не раcсчитано на людей такого возраста</value>
   </data>
-  <data name="Incorrect_AgeFormat" xml:space="preserve">
-    <value>Неверный формат даты рождения!</value>
+  <data name="Incorrect_DateFormat" xml:space="preserve">
+    <value>Неверный формат даты!</value>
   </data>
-  <data name="Incorrect_Format" xml:space="preserve">
-    <value>Неверный формат поля</value>
+  <data name="Incorrect_FieldFormat" xml:space="preserve">
+    <value>Неверный формат поля!</value>
   </data>
   <data name="Input" xml:space="preserve">
     <value>Введите</value>
   </data>
   <data name="Proteins" xml:space="preserve">
     <value>количество белков</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>время начала упражнения</value>
   </data>
   <data name="UserGender_Input" xml:space="preserve">
     <value>Введите ваш пол: </value>

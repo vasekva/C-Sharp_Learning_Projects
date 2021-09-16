@@ -70,11 +70,20 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Введите дату вашего рождения.
+        ///   Looks up a localized string similar to Введите название упражнения: .
         /// </summary>
-        internal static string Birthday_Input {
+        internal static string ActivityName_Input {
             get {
-                return ResourceManager.GetString("Birthday_Input", resourceCulture);
+                return ResourceManager.GetString("ActivityName_Input", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to дату вашего рождения.
+        /// </summary>
+        internal static string Birthday_User {
+            get {
+                return ResourceManager.GetString("Birthday_User", resourceCulture);
             }
         }
         
@@ -97,6 +106,15 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to A - ввести упражнение.
+        /// </summary>
+        internal static string Choise_A {
+            get {
+                return ResourceManager.GetString("Choise_A", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to E - ввести прием пищи.
         /// </summary>
         internal static string Choise_E {
@@ -106,11 +124,29 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Q - выход.
+        /// </summary>
+        internal static string Choise_Q {
+            get {
+                return ResourceManager.GetString("Choise_Q", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to количество жиров.
         /// </summary>
         internal static string Fats {
             get {
                 return ResourceManager.GetString("Fats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to время конца упражнения.
+        /// </summary>
+        internal static string FinishTime {
+            get {
+                return ResourceManager.GetString("FinishTime", resourceCulture);
             }
         }
         
@@ -151,20 +187,20 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Неверный формат даты рождения!.
+        ///   Looks up a localized string similar to Неверный формат даты!.
         /// </summary>
-        internal static string Incorrect_AgeFormat {
+        internal static string Incorrect_DateFormat {
             get {
-                return ResourceManager.GetString("Incorrect_AgeFormat", resourceCulture);
+                return ResourceManager.GetString("Incorrect_DateFormat", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Неверный формат поля.
+        ///   Looks up a localized string similar to Неверный формат поля!.
         /// </summary>
-        internal static string Incorrect_Format {
+        internal static string Incorrect_FieldFormat {
             get {
-                return ResourceManager.GetString("Incorrect_Format", resourceCulture);
+                return ResourceManager.GetString("Incorrect_FieldFormat", resourceCulture);
             }
         }
         
@@ -178,20 +214,20 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Пользователь не может быть равен Null.
-        /// </summary>
-        internal static string dfg {
-            get {
-                return ResourceManager.GetString("Null_User", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to количество белков.
         /// </summary>
         internal static string Proteins {
             get {
                 return ResourceManager.GetString("Proteins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to время начала упражнения.
+        /// </summary>
+        internal static string StartTime {
+            get {
+                return ResourceManager.GetString("StartTime", resourceCulture);
             }
         }
         
