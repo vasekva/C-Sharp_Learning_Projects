@@ -12,6 +12,8 @@ namespace CodeBlogFitness_BL.Model
     public class Meal
     {
         #region Свойства
+        public int Id { get; set; }
+
         /// <summary>
         /// Время приема пищи
         /// </summary>
@@ -24,11 +26,13 @@ namespace CodeBlogFitness_BL.Model
         [DataMember]
         public Dictionary<Food, double> Products { get; set; }
 
+        public int UserId { get; set; }
+
         /// <summary>
         /// Текущий пользователь
         /// </summary>
         [DataMember]
-        public User CurrentUser { get; set; }
+        public virtual User CurrentUser { get; set; }
         #endregion
 
         public Meal(User currentUser)

@@ -134,6 +134,7 @@ namespace CodeBlogFitness
          
             while (true)
             {
+                // TODO: На MacOS формат даты MM.DD.YYYY, у винды DD.MM.YYYY 
                 Console.Write(GetStrFromDictionary("Input", prog.culture) + $" {value}" + " (dd.MM.yyyy): ");
                 if (DateTime.TryParse(Console.ReadLine(), out birthDate))
                 {

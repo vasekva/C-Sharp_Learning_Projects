@@ -1,10 +1,10 @@
 ﻿using System;
 namespace CodeBlogFitness_BL.Model
 {
-    public class IDataSaver
+    public interface IDataSaver
     {
-        public IDataSaver()
-        {
-        }
+        public T LoadData<T>(string fileName);
+
+        public void SaveData<T>(string fileName, object item);
     }
 }

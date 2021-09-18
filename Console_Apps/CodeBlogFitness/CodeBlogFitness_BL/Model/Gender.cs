@@ -7,6 +7,8 @@ namespace CodeBlogFitness_BL.Model
     [Serializable]
     public class Gender
     {
+        public int Id { get; set; }
+
         /// <summary>
         /// Название
         /// </summary>

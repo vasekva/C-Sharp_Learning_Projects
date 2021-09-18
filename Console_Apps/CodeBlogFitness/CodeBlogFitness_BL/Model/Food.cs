@@ -5,8 +5,9 @@ namespace CodeBlogFitness_BL.Model
     [DataContract]
     public class Food
     {
-
         #region Свойства
+        public int Id { get; set; }
+
         [DataMember]
         public string Name { get; set; }
 

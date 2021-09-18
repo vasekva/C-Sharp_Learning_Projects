@@ -7,6 +7,8 @@ namespace CodeBlogFitness_BL.Model
     public class Activity
     {
         #region Свойства
+        public int Id { get; set; }
+
         //[DataMember]
         public string Name { get; set; }
 
