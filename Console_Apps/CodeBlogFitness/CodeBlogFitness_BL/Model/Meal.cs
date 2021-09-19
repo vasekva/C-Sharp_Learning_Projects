@@ -35,6 +35,8 @@ namespace CodeBlogFitness_BL.Model
         public virtual User CurrentUser { get; set; }
         #endregion
 
+        public Meal() { }
+
         public Meal(User currentUser)
         {
             CurrentUser = currentUser ?? throw new ArgumentNullException("Пользователь не может быть равен Null", nameof(currentUser));

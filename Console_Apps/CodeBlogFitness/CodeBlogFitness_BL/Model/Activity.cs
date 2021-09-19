@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace CodeBlogFitness_BL.Model
@@ -11,10 +12,13 @@ namespace CodeBlogFitness_BL.Model
 
         //[DataMember]
         public string Name { get; set; }
+        public virtual ICollection<Exercise> Exercises { get; set; }
 
         //[DataMember]
         public double CaloriesPerMinute { get; set; }
         #endregion
+
+        public Activity() { }
 
         public Activity(string name, double caloriesPerMin)
         {

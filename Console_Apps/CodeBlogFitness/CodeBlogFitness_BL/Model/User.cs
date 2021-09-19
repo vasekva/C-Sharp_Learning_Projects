@@ -55,6 +55,7 @@ namespace CodeBlogFitness_BL.Model
             return DateTime.Now.Year - birthDate.Year;
         }
         #endregion
+        public User() { }
 
         public User(string userName)
         {

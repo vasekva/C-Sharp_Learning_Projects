@@ -7,9 +7,6 @@ namespace CodeBlogFitness_BL.Controller
 {
     public class ExerciseController : BaseController
     {
-        private const string EXERCIES_FILENAME = "exercises.json";
-        private const string ACTIVITIES_FILENAME = "activities.json";
-
         private readonly User currentUser;
         public List<Exercise> Exercises { get; set; }
         public List<Activity> Activities { get; set; }
@@ -43,18 +40,18 @@ namespace CodeBlogFitness_BL.Controller
 
         private List<Activity> GetAllActivities()
         {
-            return LoadData<List<Activity>>(ACTIVITIES_FILENAME) ?? new List<Activity>();
+            return LoadData<Activity>() ?? new List<Activity>();
         }
 
         private List<Exercise> GetAllExercises()
         {
-            return LoadData<List<Exercise>>(EXERCIES_FILENAME) ?? new List<Exercise>();
+            return LoadData<Exercise>() ?? new List<Exercise>();
         }
 
         private void Save()
         {
-            SaveData<List<Exercise>>(EXERCIES_FILENAME, Exercises);
-            SaveData<List<Activity>>(ACTIVITIES_FILENAME, Activities);
+            SaveData(Exercises);
+            SaveData(Activities);
         }
     }
 }
