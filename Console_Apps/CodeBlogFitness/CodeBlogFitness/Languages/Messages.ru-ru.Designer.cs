@@ -22,14 +22,14 @@ namespace CodeBlogFitness.Languages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    internal class Messages_ru_ru {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Messages() {
+        internal Messages_ru_ru() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CodeBlogFitness.Languages {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeBlogFitness.Languages.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeBlogFitness.Languages.Messages.ru_ru", typeof(Messages_ru_ru).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -133,15 +133,6 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to расход энергии в минуту.
-        /// </summary>
-        internal static string Energy {
-            get {
-                return ResourceManager.GetString("Energy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to количество жиров.
         /// </summary>
         internal static string Fats {
@@ -169,16 +160,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to с.
-        /// </summary>
-        internal static string From {
-            get {
-                return ResourceManager.GetString("From", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Добро пожаловать в приложение CodeBlogFitness.
+        ///   Looks up a localized string similar to Добро пожаловать в приложение ru CodeBlogFitness.
         /// </summary>
         internal static string Greeting {
             get {
@@ -246,15 +228,6 @@ namespace CodeBlogFitness.Languages {
         internal static string StartTime {
             get {
                 return ResourceManager.GetString("StartTime", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to до.
-        /// </summary>
-        internal static string To {
-            get {
-                return ResourceManager.GetString("To", resourceCulture);
             }
         }
         

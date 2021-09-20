@@ -22,14 +22,14 @@ namespace CodeBlogFitness.Languages {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Messages {
+    internal class Messages_en_us {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Messages() {
+        internal Messages_en_us() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace CodeBlogFitness.Languages {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeBlogFitness.Languages.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("CodeBlogFitness.Languages.Messages.en_us", typeof(Messages_en_us).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Что вы хотите сделать?.
+        ///   Looks up a localized string similar to What do you want to do?.
         /// </summary>
         internal static string ActionSelection {
             get {
@@ -70,7 +70,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Введите название упражнения: .
+        ///   Looks up a localized string similar to Enter the name of the exercise:.
         /// </summary>
         internal static string ActivityName_Input {
             get {
@@ -79,7 +79,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to дату вашего рождения.
+        ///   Looks up a localized string similar to your date of birth.
         /// </summary>
         internal static string Birthday_User {
             get {
@@ -88,7 +88,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to калорийность пищи.
+        ///   Looks up a localized string similar to calorie content of food.
         /// </summary>
         internal static string Calories {
             get {
@@ -97,7 +97,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to количество углеводов.
+        ///   Looks up a localized string similar to amount of carbohydrates.
         /// </summary>
         internal static string Carbs {
             get {
@@ -106,7 +106,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A - ввести упражнение.
+        ///   Looks up a localized string similar to A - enter exercise.
         /// </summary>
         internal static string Choise_A {
             get {
@@ -115,7 +115,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to E - ввести прием пищи.
+        ///   Looks up a localized string similar to E - enter food intake.
         /// </summary>
         internal static string Choise_E {
             get {
@@ -124,7 +124,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Q - выход.
+        ///   Looks up a localized string similar to Q - exit.
         /// </summary>
         internal static string Choise_Q {
             get {
@@ -133,16 +133,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to расход энергии в минуту.
-        /// </summary>
-        internal static string Energy {
-            get {
-                return ResourceManager.GetString("Energy", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to количество жиров.
+        ///   Looks up a localized string similar to amount of fat.
         /// </summary>
         internal static string Fats {
             get {
@@ -151,7 +142,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to время конца упражнения.
+        ///   Looks up a localized string similar to end time of exercise.
         /// </summary>
         internal static string FinishTime {
             get {
@@ -160,7 +151,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Введите название еды: .
+        ///   Looks up a localized string similar to Enter the name of the food:.
         /// </summary>
         internal static string FoodName_Input {
             get {
@@ -169,16 +160,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to с.
-        /// </summary>
-        internal static string From {
-            get {
-                return ResourceManager.GetString("From", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Добро пожаловать в приложение CodeBlogFitness.
+        ///   Looks up a localized string similar to Welcome to the CodeBlogFitness app.
         /// </summary>
         internal static string Greeting {
             get {
@@ -187,7 +169,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ваш рост.
+        ///   Looks up a localized string similar to your height.
         /// </summary>
         internal static string Height_User {
             get {
@@ -196,7 +178,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Приложение не раcсчитано на людей такого возраста.
+        ///   Looks up a localized string similar to The application is not designed for people of this age.
         /// </summary>
         internal static string Incorrect_Age {
             get {
@@ -205,7 +187,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Неверный формат даты!.
+        ///   Looks up a localized string similar to Invalid date format!.
         /// </summary>
         internal static string Incorrect_DateFormat {
             get {
@@ -214,7 +196,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Неверный формат поля!.
+        ///   Looks up a localized string similar to Invalid field format!.
         /// </summary>
         internal static string Incorrect_FieldFormat {
             get {
@@ -223,7 +205,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Введите.
+        ///   Looks up a localized string similar to Enter.
         /// </summary>
         internal static string Input {
             get {
@@ -232,7 +214,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to количество белков.
+        ///   Looks up a localized string similar to amount of proteins.
         /// </summary>
         internal static string Proteins {
             get {
@@ -241,7 +223,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to время начала упражнения.
+        ///   Looks up a localized string similar to exercise start time.
         /// </summary>
         internal static string StartTime {
             get {
@@ -250,16 +232,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to до.
-        /// </summary>
-        internal static string To {
-            get {
-                return ResourceManager.GetString("To", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Введите ваш пол: .
+        ///   Looks up a localized string similar to Enter your gender:.
         /// </summary>
         internal static string UserGender_Input {
             get {
@@ -268,7 +241,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Введите ваше имя: .
+        ///   Looks up a localized string similar to Enter your name:.
         /// </summary>
         internal static string UserName_Input {
             get {
@@ -277,7 +250,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to вес порции.
+        ///   Looks up a localized string similar to serving weight.
         /// </summary>
         internal static string Weight_Serving {
             get {
@@ -286,7 +259,7 @@ namespace CodeBlogFitness.Languages {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ваш вес.
+        ///   Looks up a localized string similar to your weight.
         /// </summary>
         internal static string Weight_User {
             get {
