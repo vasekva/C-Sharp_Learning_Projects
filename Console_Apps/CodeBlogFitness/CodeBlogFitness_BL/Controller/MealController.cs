@@ -7,9 +7,6 @@ namespace CodeBlogFitness_BL.Controller
 {
     public class MealController : BaseController
     {
-        private const string PRODUCTS_FILENAME = "products.json";
-        private const string MEALS_FILENAME = "meals.json";
-
         private readonly User currentUser;
         
         public List<Food> Products { get; }
@@ -43,18 +40,18 @@ namespace CodeBlogFitness_BL.Controller
 
         private Meal GetMeal() 
         {
-            return LoadData<Meal>(MEALS_FILENAME) ?? new Meal(currentUser);
+            return LoadData<Meal>().FirstOrDefault() ?? new Meal(currentUser);
         }
 
         private List<Food> GetAllProducts()
         {
-            return LoadData<List<Food>>(PRODUCTS_FILENAME) ?? new List<Food>();
+            return LoadData<Food>() ?? new List<Food>();
         }
 
         private void Save()
         {
-            SaveData<List<Food>>(PRODUCTS_FILENAME, Products);
-            SaveData<Meal>(MEALS_FILENAME, Meal); 
+            SaveData(Products);
+            SaveData(new List<Meal>() { Meal }); 
         }
     }
 }

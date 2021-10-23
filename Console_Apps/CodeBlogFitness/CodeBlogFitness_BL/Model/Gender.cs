@@ -14,6 +14,8 @@ namespace CodeBlogFitness_BL.Model
         /// </summary>
         public string Name { get; }
 
+        public Gender() { }
+
         /// <summary>
         /// Создать новый пол
         /// </summary>

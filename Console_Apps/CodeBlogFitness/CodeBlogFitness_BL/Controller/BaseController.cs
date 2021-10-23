@@ -1,19 +1,20 @@
-﻿using CodeBlogFitness_BL.Model;
+﻿using System.Collections.Generic;
 
 namespace CodeBlogFitness_BL.Controller
 {
     public abstract class BaseController
     {
-        protected IDataSaver saver = new SerializeDataSaver();
+        private readonly IDataSaver manager = new SerializeDataSaver();
+        //private readonly IDataSaver manager = new DatabaseDataSaver();
 
-        private protected T LoadData<T>(string fileName)
+        protected List<T> LoadData<T>() where T : class
         {
-            return saver.LoadData<T>(fileName);
+            return manager.LoadData<T>();
         }
 
-        private protected void SaveData<T>(string fileName, object item)
+        protected void SaveData<T>(List<T> item) where T : class
         {
-            saver.SaveData<T>(fileName, item);
+            manager.SaveData(item);
         }
     }
 }

@@ -10,8 +10,6 @@ namespace CodeBlogFitness_BL.Controller
     /// </summary>
     public class UserController : BaseController
     {
-        private const string USERS_FILENAME = "users.json";
-
         /// <summary>
         /// Пользователь приложения.
         /// </summary>
@@ -60,7 +58,7 @@ namespace CodeBlogFitness_BL.Controller
         /// <returns> Пользователи приложения. </returns>
         private List<User> GetUsersData()
         {
-            return LoadData<List<User>>(USERS_FILENAME) ?? new List<User>();
+            return LoadData<User>() ?? new List<User>();
         }
 
         /// <summary>
@@ -68,7 +66,7 @@ namespace CodeBlogFitness_BL.Controller
         /// </summary>
         private void Save()
         {
-            SaveData<List<User>>(USERS_FILENAME, Users);
+            SaveData(Users);
         }
     }
 }

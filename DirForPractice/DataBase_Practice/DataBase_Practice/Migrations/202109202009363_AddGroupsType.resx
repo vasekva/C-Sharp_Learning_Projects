@@ -117,82 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="ActionSelection" xml:space="preserve">
-    <value>Что вы хотите сделать?</value>
+  <data name="Target" xml:space="preserve">
+    <value>H4sIAAAAAAAACuxZ227jNhB9L9B/IPTUFlkrl5dtYO8i6yQLo+skiLKL9imgpbFDlCJVkgpsFP2yPvST+gsd6mZJlHxJk+0WWAQIbJJzPzOcof/+86/h22XMySMozaQYeUeDQ4+ACGXExGLkpWb+6rX39s233wwvonhJPpXnTuw5pBR65D0Yk5z6vg4fIKZ6ELNQSS3nZhDK2KeR9I8PD3/0j458QBYe8iJkeJsKw2LIvuDXsRQhJCalfCoj4LpYx50g40quaAw6oSGMvHNq6Duq4f5G0dCwEDxyxhlFRQLgc49QIaShBtU8/aghMEqKRZDgAuV3qwTw3JxyDYX6p+vju1pyeGwt8deEJasw1UbGezI8Oilc47fJn+Tg3L+F8y7QyWZlrc4cOPLeK5kmHmlLOh1zZU91OHeQkRwQZ+OgAgNixv4dkHHKTapgJCA1ivIDcpPOOAt/gtWd/BXESKSc1/VDDXGvsYBLN0omoMzqFuaF1pPII36Tzm8TVmQ1mtykiTAnxx65QuF0xqEKf838wEgF70GAogaiG2oMKIzeJILMgY70liz7v5SGeMPM8ciULj+AWJiHkYcfPXLJlhCVK4UGHwXDREMio1LYJuQXoKpl0mYCe/T5tbqij2yRea0lLsA00x65BZ7t6geW5Bk5sDv3BfIulYxvpY3CevX+jqoFGNRVOluBTFXY0mLor3G9Ee2Wz35gtxRfsf6fYz2L/fYM3hWaBfaeAs0Sfx3QLFG7CzTPtJYhy6TXsFlIblpxISLSr0bu91J1dD2WXJZgkUWhI+8Hxyed3Kp8W3MrfNBkd9RUDdldi3PgYICchfkFN6Y6pJEbC/RD1FzBcg7K1lPK8bbXeEEwYdzaz0TIEsp7lW5R7HhfWI0q3u2dc0hA2FLf6/ddhFaYdSVXAlo+2uaSoV/DjVvpkMYgBahCg+nqfGbXYGk6qh72QkXh00UStpFieQZg6vZgQV8DugkVfzN5cR041DlsW8Q1M5scytysHXAzt+3vjRlU6Vmp6MRrY87U6EsPtaHftKajOlSBW7e5ft7nlv2w39MQD6c0SbDm1hrkYoUEeXc8fhXs3zfGOQ8/1B3tY6VtJQm7JbqA1i6KRk0vmdLG3qszvFc9Mo5i51gdpj0YKiU1kOiGqYRWedx+zkl62tiORC5oL9Gi2JaArBVsB9mlyyYTyqnqaDvHkqex6C9F/dT55Vqnz1d255B3iXUO+cruHPK2sc4hX3E5DP2W85zC54TIuSSaAd8JDnna/js0ZFVofzB0k32pWKhupDqT3mvqhePp1L72kUp6VQNbtW5Y1J3tLwROIcqPeAQd9MgiW4SClTYQD+yBQfAbH3OG9q4PTKlgc9Amn1s9nNKPW68MX87E72sd8V3G/s8+eWM345Gts/W2tn7DACIeqQofqPoupsvv65z2HagzTfcjr4/Xe+ix3/D6NWSb5sIsak6jO8FWeznyfs9oTsnk57yDm0QH5Fphbp+SQ/LHFtg96xxX9LCfddpq9rBPGByfNK71NVkvMqL9T6aysdMV7zB39Y9d+VU28qKZxKjmAO4ZRLpGst6JrItv54D0YsNaw/Ba771tQHNmupeZyNzuA6FS+xUDMarZYs3C/qYhIEvcNdPyzETMZQnWlkblkdZ1MwVDI0TQmTJsjl0sboegdfb+9onyFI9cxDOIJuI6NUlq0GSIZ7zxdm0xv0l+NnY2dR5eJ9mT2XOYgGoyNAGuxbuU8ajS+7Kj/vawsMlU9BI2lpibBhZoY8HpSoodGRXuq2rAHcQJvg6CvhYBfUQm++uGDywfYEHDVdlE9jPZHoim24fnjC4UjXXBY01vf5nz7U9zb/4BAAD//wMAr76D9swbAAA=</value>
   </data>
-  <data name="ActivityName_Input" xml:space="preserve">
-    <value>Введите название упражнения: </value>
-  </data>
-  <data name="Birthday_User" xml:space="preserve">
-    <value>дату вашего рождения</value>
-  </data>
-  <data name="Calories" xml:space="preserve">
-    <value>калорийность пищи</value>
-  </data>
-  <data name="Carbs" xml:space="preserve">
-    <value>количество углеводов</value>
-  </data>
-  <data name="Choise_A" xml:space="preserve">
-    <value>A - ввести упражнение</value>
-  </data>
-  <data name="Choise_E" xml:space="preserve">
-    <value>E - ввести прием пищи</value>
-  </data>
-  <data name="Choise_Q" xml:space="preserve">
-    <value>Q - выход</value>
-  </data>
-  <data name="Energy" xml:space="preserve">
-    <value>расход энергии в минуту</value>
-  </data>
-  <data name="Fats" xml:space="preserve">
-    <value>количество жиров</value>
-  </data>
-  <data name="FinishTime" xml:space="preserve">
-    <value>время конца упражнения</value>
-  </data>
-  <data name="FoodName_Input" xml:space="preserve">
-    <value>Введите название еды: </value>
-  </data>
-  <data name="From" xml:space="preserve">
-    <value>с</value>
-  </data>
-  <data name="Greeting" xml:space="preserve">
-    <value>Добро пожаловать в приложение CodeBlogFitness</value>
-  </data>
-  <data name="Height_User" xml:space="preserve">
-    <value>ваш рост</value>
-  </data>
-  <data name="Incorrect_Age" xml:space="preserve">
-    <value>Приложение не раcсчитано на людей такого возраста</value>
-  </data>
-  <data name="Incorrect_DateFormat" xml:space="preserve">
-    <value>Неверный формат даты!</value>
-  </data>
-  <data name="Incorrect_FieldFormat" xml:space="preserve">
-    <value>Неверный формат поля!</value>
-  </data>
-  <data name="Input" xml:space="preserve">
-    <value>Введите</value>
-  </data>
-  <data name="Proteins" xml:space="preserve">
-    <value>количество белков</value>
-  </data>
-  <data name="StartTime" xml:space="preserve">
-    <value>время начала упражнения</value>
-  </data>
-  <data name="To" xml:space="preserve">
-    <value>до</value>
-  </data>
-  <data name="UserGender_Input" xml:space="preserve">
-    <value>Введите ваш пол: </value>
-  </data>
-  <data name="UserName_Input" xml:space="preserve">
-    <value>Введите ваше имя: </value>
-  </data>
-  <data name="Weight_Serving" xml:space="preserve">
-    <value>вес порции</value>
-  </data>
-  <data name="Weight_User" xml:space="preserve">
-    <value>ваш вес</value>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>dbo</value>
   </data>
 </root>

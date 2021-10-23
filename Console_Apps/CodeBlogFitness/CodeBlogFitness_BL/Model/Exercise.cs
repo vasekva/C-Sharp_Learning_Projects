@@ -26,6 +26,8 @@ namespace CodeBlogFitness_BL.Model
         public virtual User User { get; set; }
         #endregion
 
+        public Exercise() { }
+
         public Exercise(DateTime startTime, DateTime finishTIme, Activity activity, User user)
         {
             StartTime = startTime;

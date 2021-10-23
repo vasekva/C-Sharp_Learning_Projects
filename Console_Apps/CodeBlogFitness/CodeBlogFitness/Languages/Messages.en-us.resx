@@ -118,81 +118,81 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ActionSelection" xml:space="preserve">
-    <value>Что вы хотите сделать?</value>
+    <value>What do you want to do?</value>
   </data>
   <data name="ActivityName_Input" xml:space="preserve">
-    <value>Введите название упражнения: </value>
+    <value>Enter the name of the exercise: </value>
   </data>
   <data name="Birthday_User" xml:space="preserve">
-    <value>дату вашего рождения</value>
+    <value>your date of birth</value>
   </data>
   <data name="Calories" xml:space="preserve">
-    <value>калорийность пищи</value>
+    <value>calorie content of food</value>
   </data>
   <data name="Carbs" xml:space="preserve">
-    <value>количество углеводов</value>
+    <value>amount of carbohydrates</value>
   </data>
   <data name="Choise_A" xml:space="preserve">
-    <value>A - ввести упражнение</value>
+    <value>A - enter exercise</value>
   </data>
   <data name="Choise_E" xml:space="preserve">
-    <value>E - ввести прием пищи</value>
+    <value>E - enter food intake</value>
   </data>
   <data name="Choise_Q" xml:space="preserve">
-    <value>Q - выход</value>
+    <value>Q - exit</value>
   </data>
   <data name="Energy" xml:space="preserve">
-    <value>расход энергии в минуту</value>
+    <value>energy consumption per minute</value>
   </data>
   <data name="Fats" xml:space="preserve">
-    <value>количество жиров</value>
+    <value>amount of fat</value>
   </data>
   <data name="FinishTime" xml:space="preserve">
-    <value>время конца упражнения</value>
+    <value>end time of exercise</value>
   </data>
   <data name="FoodName_Input" xml:space="preserve">
-    <value>Введите название еды: </value>
+    <value>Enter the name of the food: </value>
   </data>
   <data name="From" xml:space="preserve">
-    <value>с</value>
+    <value>from</value>
   </data>
   <data name="Greeting" xml:space="preserve">
-    <value>Добро пожаловать в приложение CodeBlogFitness</value>
+    <value>Welcome to the CodeBlogFitness app</value>
   </data>
   <data name="Height_User" xml:space="preserve">
-    <value>ваш рост</value>
+    <value>your height</value>
   </data>
   <data name="Incorrect_Age" xml:space="preserve">
-    <value>Приложение не раcсчитано на людей такого возраста</value>
+    <value>The application is not designed for people of this age</value>
   </data>
   <data name="Incorrect_DateFormat" xml:space="preserve">
-    <value>Неверный формат даты!</value>
+    <value>Invalid date format!</value>
   </data>
   <data name="Incorrect_FieldFormat" xml:space="preserve">
-    <value>Неверный формат поля!</value>
+    <value>Invalid field format!</value>
   </data>
   <data name="Input" xml:space="preserve">
-    <value>Введите</value>
+    <value>Enter</value>
   </data>
   <data name="Proteins" xml:space="preserve">
-    <value>количество белков</value>
+    <value>amount of proteins</value>
   </data>
   <data name="StartTime" xml:space="preserve">
-    <value>время начала упражнения</value>
+    <value>exercise start time</value>
   </data>
   <data name="To" xml:space="preserve">
-    <value>до</value>
+    <value>to</value>
   </data>
   <data name="UserGender_Input" xml:space="preserve">
-    <value>Введите ваш пол: </value>
+    <value>Enter your gender: </value>
   </data>
   <data name="UserName_Input" xml:space="preserve">
-    <value>Введите ваше имя: </value>
+    <value>Enter your name: </value>
   </data>
   <data name="Weight_Serving" xml:space="preserve">
-    <value>вес порции</value>
+    <value>serving weight</value>
   </data>
   <data name="Weight_User" xml:space="preserve">
-    <value>ваш вес</value>
+    <value>your weight</value>
   </data>
 </root>
